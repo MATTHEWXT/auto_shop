@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <app-navbar *ngIf="router.url !== '/login' && router.url !== '/register'"></app-navbar>
+    </header>
+    <div class="content">
+    <app-notification></app-notification>
+    <router-outlet></router-outlet>
+</div>
+    <footer *ngIf="router.url !== '/login' && router.url !== '/register'">
+        <app-footer></app-footer>
+    </footer>
+</body>
+
+</html>

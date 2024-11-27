@@ -1,0 +1,7 @@
+<div *ngIf="messageError !== null" class="alert alert-danger text-center error-message" [ngClass]="{ 'show': isShowAlertMessage }">
+    {{ messageError }}
+</div>
+
+<div *ngIf="messageSuccess !== null" class="alert alert-danger text-center success-message" [ngClass]="{ 'show': isShowAlertMessage }">
+    {{ messageSuccess }}
+</div>

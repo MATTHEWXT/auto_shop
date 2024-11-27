@@ -1,0 +1,108 @@
+.container{
+    padding: 0;
+    max-width: 100%;
+}
+.footer-top {
+    background-color: #11161f;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 20px;
+    gap: 25px;  
+    width: 100%;
+}
+
+  /* Стили для ссылок */
+  .footer-top a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  .footer-top a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Логотип и краткое описание */
+  .footer-logo img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+  }
+  
+  /* Быстрые ссылки */
+  .footer-links h5 {
+    font-size: 1rem;
+    color: #ffc107;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: #ffffff;
+    font-size: 0.85rem;
+  }
+  
+  /* Контактная информация */
+  .footer-contact h5 {
+    font-size: 1rem;
+    color: #ffc107;
+  }
+  
+  .footer-contact p {
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+  }
+  
+  .footer-contact i {
+    margin-right: 8px;
+  }
+  
+  /* Социальные сети */
+  .footer-social h5 {
+    font-size: 1rem;
+    color: #ffc107;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-social i {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover i {
+    color: #ffc107;
+  }
+  
+  /* Нижняя часть футера */
+  .footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer-bottom p{
+    margin: 0;
+  }
+  .footer-top hr {
+    border-color: #444;
+    margin: 1.5rem 0;
+  }
+  

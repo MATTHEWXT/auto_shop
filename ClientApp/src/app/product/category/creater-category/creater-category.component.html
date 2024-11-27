@@ -1,0 +1,13 @@
+<div class="category-form-container">
+    <h2>Добавить категорию товаров</h2>
+    <form #productForm="ngForm" (ngSubmit)="onSubmitCategory()" enctype="multipart/form-data" class="form-container">
+        <div *ngIf="errorMessage" style="color: rgb(255, 38, 0);">
+            {{ errorMessage }}
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Категория товаров</label>
+            <input type="text" id="name" name="name" [(ngModel)]="category.name" required class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Создать категорию</button>
+    </form>
+</div>

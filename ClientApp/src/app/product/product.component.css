@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.category-container{
+    max-width: 1200px;
+    padding: 25px 32px 130px 32px;
+    margin: 0 auto;
+}
+.category-container h2{
+    margin: 0 0 40px 0;
+    text-transform: capitalize;
+    color: #e7e7e7;
+}
+
+.cards-container {
+    display: flex;
+    background: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    border: none;
+    width: 260px;
+}
+
+.card-body {
+    padding: 0;
+    background-color: #242c3d;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.img-container {
+    width: 100%; /* Ширина контейнера изображения на всю карточку */
+    height: 0; /* Высота контейнера установлена на 0 */
+    padding-bottom: 100%; /* Отношение сторон 1:1 для квадратного изображения */
+    position: relative; /* Позиционирование контейнера */
+    overflow: hidden; /* Обрезка содержимого, если изображение больше, чем контейнер */
+}
+
+
+.img-container img {
+    position: absolute; /* Абсолютное позиционирование изображения */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина изображения на всю ширину контейнера */
+    height: 100%; /* Высота изображения на всю высоту контейнера */
+    object-fit: cover; /* Изображение сохраняет пропорции и заполняет контейнер */
+}
+.forCard{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.text-container{
+    text-align: left;
+    padding: 10px 10px 20px 10px;
+}
+.cards-container .card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #e7e7e7;}
+
+.cards-container .card .card-price {
+    font-family: 'Montserrat', sans-serif;
+    color: #e7e7e7;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 4px;
+}
+.card .cart-icon{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 7px;
+    color: #e7e7e7;
+    text-decoration: none;
+    background-color: #df4f0d;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+.card .cart-icon svg{
+    margin-right: 5px;;
+    stroke: currentColor; /* Используйте текущий цвет текста для иконки */
+}
+.cart-icon:hover svg {
+    color: #e7e7e7; /* Цвет иконки при наведении */
+}
+
+.card .cart-icon.added {
+    background-color: #e0b5a0;
+    color: #d3371c;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    background-color: #80A18F;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.card-title::first-letter{
+    text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.error-message {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed; /* Фиксированное позиционирование */
+    text-wrap: nowrap;
+    top: 30px; /* Отступ сверху */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем на половину ширины */
+    z-index: 1050; /* Высокий z-index для отображения над другими элементами */
+    transition: opacity 0.5s ease; /* Плавный переход для анимации */
+    opacity: 0; /* Начальная непрозрачность */
+    background-color: rgb(192, 10, 10);
+    color: rgb(236, 195, 195);
+}
+
+.success-message{
+    font-family: 'Montserrat', sans-serif;
+    position: fixed; /* Фиксированное позиционирование */
+    text-wrap: nowrap;
+    top: 30px; /* Отступ сверху */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем на половину ширины */
+    z-index: 1050; /* Высокий z-index для отображения над другими элементами */
+    transition: opacity 0.5s ease; /* Плавный переход для анимации */
+    background-color: rgb(41, 155, 6);
+    color: rgb(206, 236, 195);
+    border-color: rgb(206, 236, 195);
+}
+
+.error-message.show, .success-message.show {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 420px) {
+    .error-message,.success-message {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}

@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg">
+  <div *ngIf="!isLoading" class="container-fluid">
+
+    <a routerLink="/" class="navbar-brand"><img [src]="logoUrl" /></a>
+
+    <button *ngIf="!showBurger" class="btn btn-outline-secondary me-auto btn-catalog" (click)="toggleCatalogSidebar()" [class.active]="catalogSidebarOpen">
+      Каталог
+    </button>
+
+    <div>
+      <!-- Версия для больших экранов -->
+      <div *ngIf="!showBurger" class="d-flex">
+        <div class="search-bar">
+          <button (click)="toggleSearch()" class="search-button" [class.active]="isSearchVisible">
+            <svg class="search-ic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+              <circle cx="10" cy="10" r="7" />
+              <line x1="16" y1="16" x2="21" y2="21" />
+            </svg>
+            <span class="text-btn">Поиск</span>
+          </button>
+
+          <input #searchInput class="search-input-area" [ngClass]="{'show': isSearchVisible}" type="text"
+            placeholder="Поиск" [(ngModel)]="searchTerm" (keyup.enter)="applyFilterSearch(searchTerm)" />
+
+        </div>
+
+        <a *ngIf="!showBurger" class="btn btn-outline-primary" routerLink="/basket" [class.active.basket]="false">Корзина</a>
+
+        <a class="btn btn-outline-success" routerLink="/user-orders" [class.active]="false">Заказы</a>
+        <button *ngIf="isUserManager" class="btn btn-outline-secondary" (click)="toggleManagerSidebar()" [class.active]="managerSidebarOpen">
+          Менеджер-панель
+        </button>
+
+        <button *ngIf="isUserAdmin" class="btn btn-outline-secondary" (click)="toggleAdminSidebar()" [class.active]="adminSidebarOpen">
+          Админ-панель
+        </button>
+
+        <a *ngIf="!isUserLoggedIn; else logoutButton" class="btn btn-outline-primary"
+          routerLink="/register" [class.active.register]="false">Регистрация</a>
+
+        <a *ngIf="!isUserLoggedIn" class="btn btn-outline-success" routerLink="/login" [class.active.login]="false">Войти</a>
+      </div>
+    </div>
+
+      <!-- Версия для малень экранов -->
+      <div *ngIf="showBurger" class="forMobile">
+
+      <div class="search-bar">
+        <button (click)="toggleSearch()" class="search-button">
+          <svg class="search-ic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <circle cx="10" cy="10" r="7" />
+            <line x1="16" y1="16" x2="21" y2="21" />
+          </svg>
+          <span class="text-btn">Поиск</span>
+        </button>
+
+        <input #searchInput class="search-input-area" [ngClass]="{'show': isSearchVisible}" type="text"
+          placeholder="Поиск" [(ngModel)]="searchTerm" (keyup.enter)="applyFilterSearch(searchTerm)" />
+
+      </div>
+
+      <a class="cart-icon" routerLink="/basket">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-shopping-cart">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </a>
+
+      <div class="burger" (click)="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- бургер -->
+<div *ngIf="showBurger" [ngClass]="{'show': menuOpen}" class="burger-links">
+  <li><button class="btn btn-outline-secondary" (click)="toggleCatalogSidebar()" (click)="toggleMenu()">
+      каталог
+    </button></li>
+
+  <li><a class="btn" routerLink="/login" routerLink="/user-orders" (click)="toggleMenu()">Заказы</a></li>
+  <li *ngIf="isUserManager">
+    <button class="btn" (click)="toggleManagerSidebar(); toggleMenu()">Менеджер-панель</button>
+  </li>
+  <li *ngIf="isUserAdmin">
+    <button class="btn" (click)="toggleAdminSidebar(); toggleMenu()">Админ-панель</button>
+  </li>
+  <li *ngIf="!isUserLoggedIn; else logoutButton">
+    <a *ngIf="!isUserLoggedIn; else logoutButton" class="btn btn-outline-primary" routerLink="/register"
+      (click)="toggleMenu()">Регистрация</a>
+  </li>
+  <li>
+    <a *ngIf="!isUserLoggedIn" class="btn" routerLink="/login" (click)="toggleMenu()">Войти</a>
+  </li>
+</div>
+
+<ng-template #logoutButton>
+  <button class="btn btn-outline-danger " (click)="logout(); toggleMenu()">Выйти</button>
+</ng-template>
+
+<!-- каталог-панель -->
+<div class="sidebar catalog" [class.sidebar-no-transition]="adminSidebarOpen || managerSidebarOpen"
+  [ngStyle]="{'width': catalogSidebarOpen ? '250px' : '0'}">
+  <ul class="list-unstyled">
+    <li  *ngFor="let category of categories">
+      <a (click)="goToCategory(category.name)" class="btn"
+        (click)="catalogSidebarOpen=false">{{
+         transliterate(category.name, true) }}</a>
+    </li>
+  </ul>
+</div>
+
+<!-- админ-панель -->
+<div class="sidebar admin" [class.sidebar-no-transition]="catalogSidebarOpen"
+  [ngStyle]="{'width': adminSidebarOpen ? '250px' : '0'}">
+  <ul class="list-unstyled">
+    <li>  <a class="btn" routerLink="/product-creater">Добавить товар</a>
+    </li>
+    <li>  <a class="btn" routerLink="/product-change">Редактировать товар</a>
+    </li>
+        <li>  <a class="btn" routerLink="/category-creater">Добавить категорию</a>
+        </li>
+
+  </ul>
+</div>
+
+<!-- менеджер-панель -->
+<div class="sidebar manager" [class.sidebar-no-transition]="catalogSidebarOpen"
+  [ngStyle]="{'width': managerSidebarOpen ? '250px' : '0'}">
+  <a class="btn" routerLink="/orders-managment">Список заказов</a>
+</div>

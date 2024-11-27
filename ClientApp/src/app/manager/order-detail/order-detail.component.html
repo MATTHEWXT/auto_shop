@@ -1,0 +1,30 @@
+<div class="order-detail-container" *ngIf="order">
+    <h2>Детали заказа # {{order.id}}</h2>
+    
+    <div class="recipient-info">
+      <h3>Получатель</h3>
+      <p>Имя: {{ firstName }}</p>
+      <p>Фамилия: {{ lastName }}</p>
+      <p>Телефон: {{ phoneNumber }}</p>
+    </div>
+  
+    <div class="address-info">
+      <h3>Адрес</h3>
+      <p>Город: {{ city }}</p>
+      <p>Улица: {{ street }}</p>
+      <p>Дом: {{ house }}</p>
+    </div>
+  
+    <h3>Товары:</h3>
+    <div class="order-items">
+      <div *ngFor="let item of order?.orderItems" class="order-item">
+        <img [src]="baseUrl + item.product.imagePath" alt="{{ item.product.name }}" class="product-image" />
+        <div class="item-details">
+          <h5>{{ item.product.name }}</h5>
+          <p>Цена: {{ item.product.price | number: '' }} ₽</p>
+        </div>
+      </div>
+    </div>
+    <button class="btn-sent" *ngIf="order.status === 'Создано'" (click)='markAsSent(order.id)'>Отправлено</button>
+  </div>
+  

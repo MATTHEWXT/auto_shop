@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.manager-orders-container {
+    margin-left: 280px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+
+.orders-list {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.manager-orders-container .tabs{
+    margin-top: 15px;
+}
+.tabs button:first-child{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.tabs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #e7e7e7;
+    background-color: #df4f0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.tabs button:hover{
+    background-color: #df703d;
+}
+.tabs button.active{
+    background-color: #e0b5a0;
+    color: #d3371c;
+}
+.order-card {
+    background-color: #242c3d;
+    /* Цвет фона плитки заказа */
+    border-radius: 4px;
+    /* Скругление углов плитки заказа */
+    padding: 15px;
+    /* Отступы внутри плитки заказа */
+    margin-bottom: 15px;
+    /* Отступ между плитками заказа */
+    color: #e7e7e7;
+    /* Цвет текста плитки заказа */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.order-card h3 {
+    font-family: 'Yeseva One', sans-serif;
+    /* Шрифт заголовка заказа */
+    /* Размер шрифта заголовка */
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #007bff;
+    /* Отступы */
+}
+
+.manager-orders-container h2 {
+    color: #e7e7e7;
+    /* Цвет текста плитки заказа */
+
+}
+
+.item-details h5::first-letter{
+    text-transform: uppercase;
+}
+.order-card p {
+    font-family: 'Lora', sans-serif;
+    /* Шрифт для текста заказа */
+    margin: 5px 0;
+    /* Отступы */
+}
+.order-card .btn-details{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #e7e7e7;
+    background-color: #df4f0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.order-card .btn-details:hover{
+    background-color: #df703d;
+
+}
+
+.order-item {
+    display: flex;
+    /* Флекс для размещения элементов товара */
+    align-items: center;
+    /* Выравнивание по центру */
+    margin-bottom: 10px;
+    /* Отступ между товарами */
+}
+.order-item img{
+    border-radius: 4px;
+}
+.order-item p{
+margin: 0;
+}
+.product-image {
+    width: 50px;
+    /* Ширина изображения товара */
+    height: auto;
+    /* Автоматическая высота */
+    margin-right: 10px;
+    /* Отступ между изображением и текстом */
+}
+
+.product-form-container button {
+    background-color: #df4f0d;
+    /* Цвет фона кнопки */
+    font-family: 'Montserrat', sans-serif;
+    /* Шрифт для кнопки */
+    color: #e7e7e7;
+    /* Цвет текста кнопки */
+    border: none;
+    /* Убираем границу кнопки */
+    padding: 10px;
+    /* Отступы внутри кнопки */
+    border-radius: 5px;
+    /* Скругление углов кнопки */
+    font-size: 1em;
+    /* Размер шрифта кнопки */
+    cursor: pointer;
+    /* Указатель при наведении на кнопку */
+    transition: background-color 0.3s;
+    /* Плавный переход цвета кнопки */
+    display: block;
+    /* Блоковая модель для кнопки */
+    margin: 0 auto;
+    /* Центрирование кнопки */
+}
+
+.product-form-container button:hover {
+    background-color: #e4662b;
+    /* Цвет кнопки при наведении */
+}
+
+@media screen and (max-width: 610px) {
+    .manager-orders-container {
+        margin-left: 0;
+        /* Убираем отступ слева на узких экранах */
+    }
+}

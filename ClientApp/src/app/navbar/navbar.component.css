@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+body {
+  font-family: 'Lora', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0;
+  background-color: #3d4d63;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 1000;
+  /* Задайте высокий z-index для navbar */
+}
+
+.navbar .navbar-brand {
+  font-size: 14px;
+  font-family: 'Lora', sans-serif;
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.sidebar .btn, .burger-links .btn{
+  padding: 0;
+  margin: 18px 18px 18px 20px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  color: #e7e7e7;
+  text-wrap: nowrap;
+  background: none;
+}
+.container-fluid .btn-catalog{
+  padding: 18px 18px 18px 20px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  color: #e7e7e7;
+  text-wrap: nowrap;
+  background: none;
+}
+.container-fluid .btn-catalog.active{
+  background-color: #2c3746;
+}
+/* Стили для кнопки управления админа */
+.navbar .d-flex .btn {
+  padding: 18px 18px 18px 20px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  color: #e7e7e7;
+  text-wrap: nowrap;
+  background: none;
+}
+.btn:hover{
+  background: none;
+}
+.navbar .btn:active{
+background:none;
+}
+
+.navbar .d-flex .btn.active{
+background-color: #2c3746;
+}
+/* Стили для боковой панели */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px 0 0 0;
+  height: 100%;
+  margin-top: 60px;
+  width: 0;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  /* Shadow effect for sidebar */
+  background-color: #212a36;
+  overflow-x: hidden;
+  text-wrap: nowrap;
+  transition: .3s;
+}
+
+.sidebar-no-transition {
+  transition: none;
+}
+
+.sidebar .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-left: 20px;
+  padding: 0;
+}
+
+
+.sidebar .btn:hover {
+  color: #df4f0d;
+}
+
+.sidebar .list-unstyled {
+  margin: 0;
+}
+
+.main-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dropdown {
+  display: flex;
+}
+
+.dropdown-menu {
+  user-select: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  left: 210px;
+  color: #e7e7e7;
+  text-decoration: none;
+  font-size: 44px;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Расстояние между картинкой и текстом */
+}
+
+.user-icon {
+  width: 24px;
+  /* Размер иконки */
+  height: 24px;
+}
+
+.user-btn::after {
+  display: none;
+  /* Убирает стрелку вниз */
+}
+
+.cart-icon svg {
+  margin-right: 25px;
+  width: 24px;
+  height: 24px;
+  color: #e7e7e7;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover svg {
+  color: #007bff;
+}
+
+.burger .line {
+  height: 4px;
+  /* Line height */
+  background-color: #e7e7e7;
+  /* Line color */
+  border-radius: 2px;
+  /* Rounded edges */
+}
+
+.nav-links {
+  display: none;
+  /* Скрыть меню по умолчанию */
+  position: absolute;
+  top: 60px;
+  /* Позиция под навигацией */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  /* Цвет фона меню */
+  z-index: 1000;
+  /* На переднем плане */
+}
+
+.nav-links.active {
+  display: flex;
+  /* Показываем меню, когда оно активно */
+  flex-direction: column;
+  padding: 10px 0;
+  /* Отступы внутри меню */
+}
+
+
+.burger-links {
+  position: fixed;
+  z-index: 501;
+  list-style: none;
+  /* Remove bullet points */
+  padding: 10px 20px 0 20px;
+  margin: 60px 0 0 0;
+  /* Remove default margin */
+  display: flex;
+  /* Display links in a row */
+  flex-direction: column;
+  /* Stack links vertically */
+  background-color: #212a36;
+  align-items: end;
+  /* Background for the dropdown menu */
+  position: fixed;
+  /* Fixed position for sidebar */
+  top: 0;
+  /* Align to the top */
+  right: 0;
+  /* Align to the right */
+  height: 100%;
+  /* Full height of the menu */
+  width: 250px;
+  /* Set width of the sidebar */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  /* Shadow effect for sidebar */
+  /* Ensure it appears above other elements */
+  transform: translateX(100%);
+  /* Hide the sidebar off-screen */
+  transition: transform .3s ease;
+  /* Smooth transition for showing/hiding */
+}
+
+.navbar-brand img {
+  width: 95px;
+  padding-left: 12px;
+  margin-right: 25px;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-input-area {
+  display: none;
+  position: absolute;
+}
+
+.search-input-area.show {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 400px;
+  position: absolute;
+  top: 60px;
+  left: -316px;
+  border: none;
+  border-radius: 0 0 3px 3px;
+  display: block;
+  padding: 12px 10px;
+}
+
+.search-input-area.show:hover {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.search-input-area.show:focus {
+  outline: none;
+  /* Убираем обвод при фокусе */
+}
+
+.search-button {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  font-weight: 600;
+  padding: 0 15px;
+  /* Отступы для кнопки */
+  background-color: #df4f0d;
+  /* Основной цвет кнопки */
+  color: white;
+  /* Цвет текста */
+  border: none;
+  /* Без границы */
+  /* Закругленные углы */
+  cursor: pointer;
+  /* Указатель при наведении */
+  transition: background-color 0.3s;
+  /* Плавный переход для фона */
+}
+.search-bar .search-button.active{
+  background-color: #df703d;
+  box-shadow: 0 0 5px rgba(255, 123, 0, 0.5);
+
+}
+
+.search-button:hover {
+  background-color: #df703d;
+  /* Темнее при наведении */
+}
+
+.search-button:focus {
+  outline: none;
+  /* Убираем обвод при фокусе */
+  /* Тень при фокусе */
+}
+
+.navbar .search-button .search-ic{
+  display: none;
+}
+/* Class to show the sidebar */
+.burger-links.show {
+  padding: 10px 20px 0 20px;
+  margin: 60px 0 0 0;
+  /* Remove default margin */
+  transform: translateX(0);
+  /* Slide in the sidebar */
+  position: fixed;
+  z-index: 501;
+}
+
+.burger-links .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  /* Цвет текста */
+  text-decoration: none;
+  /* Убрать подчеркивание */
+  display: block;
+  /* Блоковое отображение для всей области ссылки */
+  transition: color 0.2s;
+  background: none;
+  padding: 0;
+}
+
+.burger-links .btn:active{
+  background: none;
+}
+
+.burger-links .btn:hover {
+  color: #df4f0d;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  /* Burger icon width */
+  height: 24px;
+  /* Burger icon height */
+}
+
+
+/* Show Menu Styles */
+.menuOpen .nav-links {
+  display: flex;
+  /* Display the links when menu is open */
+}
+
+
+@media (max-width: 799px) {
+  .burger {
+    display: flex;
+    /* Показываем бургер на маленьких экранах */
+  }
+
+  .d-flex {
+    display: none;
+    /* Скрываем элементы для больших экранов */
+  }
+  .navbar .search-bar{
+    width: 24px;
+    margin-right: 25px;
+    margin-top: 6px;
+  }
+  .navbar .search-button{
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .forMobile .search-input-area.show{
+    width: 300px;
+    left: -324px;
+    top: -12px;
+    border-radius: 4px;
+  }
+
+  .container-fluid{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 1044px) {
+  .search-input-area{
+    width: 200px;
+  }
+}
+
+@media (max-width: 934px) {
+  .navbar .navbar-brand{
+    display: none;
+  }
+  .navbar .search-button .text-btn{
+    display: none;
+  }
+  .navbar .search-button{
+    margin-right: 12px;
+  }
+  .navbar .search-button .search-ic{
+    display: block;
+  }
+  .btn {
+  margin-left: 20px;
+  padding: 0;
+  }
+
+  .search-input-area.show {
+    left: 0;
+  }
+  
+}
+
+@media (max-width: 479px) {
+  .forMobile .search-input-area.show{
+    top: 42px;
+    width: 300px;
+    left: -172px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+@media screen and (min-width: 610px) {
+  .sidebar {
+    width: 0;
+  }
+}
+
+.forMobile {
+  display: flex;
+  align-items: center;
+}
+
+/* Burger Menu Styles
+  
+  /* Media Queries */
+@media (min-width: 800px) {
+  .burger {
+    display: none;
+    /* Hide burger menu on larger screens */
+  }
+}

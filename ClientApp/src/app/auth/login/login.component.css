@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+body {
+    color: #dba34e; /* Основной цвет текста для body */
+}
+
+.login-form {
+    max-width: 300px; /* Максимальная ширина формы */
+    margin: -100px auto 0 auto; /* Центрирование формы */
+    padding-top: 150px;
+}
+
+.enrty-container{
+    background-color: #242c3d; /* Цвет фона формы - золотистый */
+    border-radius: 4px; /* Скругление углов */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 20px; /* Отступы внутри формы */
+}
+
+.login-form h2 {
+    font-family: 'Yeseva One', sans-serif; /* Шрифт заголовка */
+    font-size: 26px;
+    color: #e7e7e7/*#5a3f23*/; /* Цвет заголовка */
+    text-align: center; /* Выравнивание заголовка по центру */
+}
+
+.login-form label {
+    display: block; /* Переводим метки на новую строку */
+    color: #e7e7e7; /* Цвет текста меток */
+    font-family: 'Lora', serif; /* Элегантный шрифт */
+    font-size: 14px;
+}
+
+.login-form input {
+    width: 100%; /* Полная ширина поля ввода */
+    padding: 5px; /* Отступы внутри поля ввода */
+    font-weight: 500;
+    margin-bottom: 15px; /* Отступ снизу от поля ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    outline: none;
+    border-radius: 2px; /* Скругление углов поля ввода */
+    font-size: 1em;
+    font-family: 'Lora', serif; /* Шрифт для полей ввода */
+    color: #000000; /* Тёмно-серый цвет текста */
+    background-color: #FFF; /* Белый фон поля ввода */
+    box-sizing: border-box; /* Включаем границы и отступы в ширину элемента */
+}
+
+.goHome{
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    background: none;
+    border: none;
+    color: #2181e0;
+}
+
+.login-form button {
+    background-color: #df4f0d;
+    color: #F1E6D3; /* Золотистый цвет текста кнопки */
+    border: none; /* Убираем границу кнопки */
+    padding: 10px 20px; /* Отступы вокруг текста кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif; /* Шрифт кнопки */
+    cursor: pointer; /* Указатель при наведении на кнопку */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход цвета фона и анимация */
+    display: block; /* Делаем кнопку блочной для центрирования */
+    margin: 0 auto; /* Центрирование кнопки */
+}
+.login-form button.lock{
+    background-color: #e08d67;
+}
+.login-form button.lock:hover{
+    background-color: #e08d67;
+    cursor: default;
+}
+.enrty-container p{
+    display: flex;
+    color: #e7e7e7;
+    font-family: 'Lora', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+.enrty-container .reAdress{
+    background: none;
+    color: #2181e0;
+    padding: 0;
+    margin-left: 5px;
+    font-family: 'Lora', sans-serif;
+    font-size: 14px;
+}
+.enrty-container .reAdress:hover{
+    background: none;
+}
+.login-form button:hover {
+    background-color: #e4662b; /* Цвет кнопки при наведении */
+}

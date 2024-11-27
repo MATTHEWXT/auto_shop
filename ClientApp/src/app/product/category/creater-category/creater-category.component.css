@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.category-form-container {
+    margin-left: 250px;
+    padding: 40px 20px 15px 20px;
+
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #242c3d;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.category-form-container h2 {
+    font-size: 26px;
+    color: #e7e7e7;
+    text-align: center;
+    font-family: 'Yeseva One', sans-serif;
+}
+
+.category-form-container label {
+    display: block;
+    color: #e7e7e7;
+    font-size: 14px;
+    font-family: 'Lora', sans-serif;
+}
+
+.category-form-container input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000000;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.category-form-container button {
+    background-color: #df4f0d;
+    font-family: 'Montserrat', sans-serif;
+    color: #e7e7e7;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.category-form-container button:hover {
+    background-color: #e4662b;
+}
+
+@media screen and (max-width: 610px) {
+    .category-form-container {
+        margin-left: 0;
+    }
+  }

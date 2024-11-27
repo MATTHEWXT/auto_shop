@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+
+.registration-container {
+    max-width: 300px; 
+    margin: -100px auto 0 auto; 
+    padding-top: 100px;
+}
+.entry-container{
+    background-color: #242c3d; 
+    border-radius: 4px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 20px; 
+}
+.registration-container h2 {
+    font-size: 26px;
+    color: #e7e7e7; 
+    text-align: center;
+    font-family: 'Yeseva One', sans-serif;
+}
+
+.goHome{
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    background: none;
+    border: none;
+    color: #2181e0;
+}
+
+.registration-container label {
+    display: block;
+    color: #e7e7e7; 
+    font-size: 14px;
+    font-family: 'Lora', sans-serif;
+}
+
+.registration-container input {
+    width: 100%; 
+    padding: 5px;
+    margin-bottom: 15px; 
+    border-radius: 2px; 
+    font-size: 1em; 
+    font-weight: 500;
+    color: #000000; 
+    box-sizing: border-box; 
+    font-family: 'Lora', sans-serif;
+    border:none; 
+    outline: none;
+}
+
+.registration-container button {
+    background-color: #df4f0d;
+    font-family: 'Montserrat', sans-serif;
+    color: #e7e7e7; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: block; 
+    margin: 0 auto; 
+}
+.registration-container button.lock{
+    background-color: #e08d67;
+
+}
+.registration-container button.lock:hover{
+    background-color: #e08d67;
+    cursor: default;
+}
+.registration-container p{
+    display: flex;
+    color: #e7e7e7;
+    font-family: 'Lora', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+.registration-container .reAdress{
+    background: none;
+    color: #2181e0;
+    padding: 0;
+    margin-left: 5px;
+    font-family: 'Lora', sans-serif;
+    font-size: 14px;
+}
+
+.registration-container .reAdress:hover{
+    background: none;
+}
+
+
+.registration-container button:hover {
+    background-color: #e4662b; 
+}

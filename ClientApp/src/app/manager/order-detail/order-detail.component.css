@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.order-detail-container {
+    max-width: 800px; /* Ограничение ширины для центровки */
+    margin: 80px auto 0 auto; /* Центрирование */
+    background-color: #242c3d; /* Фон для основного контейнера */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Тень */
+    color: #e7e7e7; /* Основной цвет текста */
+    font-family: 'Lora', sans-serif; /* Шрифт для текста */
+}
+
+.order-detail-container h2 {
+    font-family: 'Yeseva One', sans-serif; /* Шрифт заголовка */
+    color: #007bff; /* Цвет заголовка */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.recipient-info h3,
+.address-info h3
+ {
+    font-family: 'Montserrat', sans-serif; /* Шрифт для подзаголовков */
+    color: #e7e7e7;
+    border-bottom: 1px solid #747474; /* Линия под подзаголовком */
+    padding-bottom: 5px;
+}
+
+.recipient-info, .address-info {
+    margin-bottom: 20px; /* Отступ между секциями */
+}
+
+.recipient-info p,
+.address-info p{
+    margin: 0;
+    font-size: 18px;
+}
+.order-items {
+    background-color: #1c2230; /* Фон для секции товаров */
+    padding: 15px; /* Внутренний отступ */
+    border-radius: 4px; /* Скругленные углы */
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #e7e7e7;
+}
+
+.product-image {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 4px; /* Скругленные углы для изображений */
+}
+
+.item-details h5 {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 18px;
+    color: #df4f0d; /* Цвет заголовка товара */
+    margin: 0;
+}
+
+.item-details p {
+    font-family: 'Lora', sans-serif;
+    margin: 0;
+}
+
+
+
+.product-form-container button {
+    background-color: #df4f0d;
+    color: #e7e7e7;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.product-form-container button:hover {
+    background-color: #e4662b;
+}
+
+.btn-sent{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #e7e7e7;
+    background-color: #df4f0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+}
+
+.btn-sent:hover{
+    background-color: #df703d;
+}
+
+@media screen and (max-width: 610px) {
+    .order-detail-container {
+        padding: 15px;
+    }
+
+    .product-image {
+        width: 50px;
+    }
+}

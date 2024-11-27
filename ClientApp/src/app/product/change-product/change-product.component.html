@@ -1,0 +1,59 @@
+<div class="container mt-5 product-form-container">
+  <h2 class="text-center">Редактировать продукт</h2>
+
+  <!-- Форма поиска продукта по ID -->
+  <form (ngSubmit)="findProduct()" class="mb-4 search-form">
+    <div *ngIf="errorMessage" style="color:rgb(255, 38, 0); margin-bottom: 15px; font-size: 18px;">
+      {{ errorMessage }}
+  </div>
+    <div class="form-group mb-3">
+      <input [(ngModel)]="productSearchCriteria" name="productId" class="form-control"
+        placeholder="ID или название продукта" />
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Найти продукт</button>
+  </form>
+
+  <!-- Форма редактирования продукта -->
+  <form *ngIf="product" (ngSubmit)="onSubmit()" class="mt-4 edit-form">
+    <div *ngIf="errorMessageCreater" style="color:rgb(255, 38, 0); margin-bottom: 10px; font-size: 18px;">
+      {{ errorMessageCreater }}
+  </div>
+    <div class="form-group mb-3">
+      <label for="name">Название</label>
+      <input id="name" [(ngModel)]="product.name" name="name" class="form-control product-name"
+        placeholder="Название продукта" required />
+    </div>
+
+    <div class="category-price">
+      <div class="mb-3 category-product">
+        <label for="category" class="form-label">Категория товара</label>
+        <select id="category" name="categoryId" [(ngModel)]="product.categoryId" required class="form-control">
+          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+      </div>
+      <div class="form-group mb-3 price-product">
+        <label for="price">Цена <span class="currency-symbol">₽</span></label>
+        <input type="number" id="price" [(ngModel)]="product.price" name="price" class="form-control"
+          placeholder="Цена продукта" required />
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="image">Изображение</label>
+      <div class="d-flex mb-2 file-selected">
+        <img *ngIf="selectedImageUrl || product.imagePath" [src]="selectedImageUrl || (baseUrl + product.imagePath)"
+          alt="{{ product.name }}" class="img-thumbnail me-3" />
+        <div class="btn-select-img">
+          <label for="file-upload" class="custom-file-upload">Выберите файл</label>
+          <input id="file-upload" type="file" (change)="onFileSelected($event)" class="form-control file-input" />
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button type="submit" class="btn ">Сохранить изменения</button>
+      <button type="button" class="btn btn-delete" (click)="deleteProduct()">Удалить
+        продукт</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+
+.product-form-container {
+    margin-left: 250px;
+    padding: 40px 20px 15px 20px;
+    transition: margin-left 0.5s;
+}
+
+.form-container {
+    margin: 0 auto;
+    /* Центрирует по горизонтали */
+    max-width: 400px;
+    background-color: #242c3d;
+    /* Цвет фона */
+    border-radius: 4px;
+    /* Скругление углов */
+    /* Граница */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    /* Тень */
+    padding: 20px;
+    /* Отступы внутри формы */
+}
+
+.product-form-container h2 {
+    font-size: 26px;
+    /* Размер заголовка */
+    color: #e7e7e7;
+    /* Цвет текста заголовка */
+    text-align: center;
+    /* Центрирование текста заголовка */
+    font-family: 'Yeseva One', sans-serif;
+    /* Шрифт для заголовка */
+}
+
+.product-form-container label {
+    display: block;
+    /* Блоковая модель для меток */
+    color: #e7e7e7;
+    /* Цвет текста меток */
+    font-size: 14px;
+    /* Размер шрифта меток */
+    font-family: 'Lora', sans-serif;
+    /* Шрифт для меток */
+}
+
+.product-form-container input,
+.product-form-container select {
+    width: 100%;
+    /* Полная ширина поля ввода */
+    padding: 5px;
+    /* Отступы внутри поля ввода */
+    margin-bottom: 15px;
+    /* Отступ между полями ввода */
+    border-radius: 4px;
+    /* Скругление углов поля ввода */
+    font-size: 1em;
+    /* Размер шрифта поля ввода */
+    font-weight: 500;
+    /* Жирность шрифта поля ввода */
+    color: #000000;
+    /* Цвет текста в поле ввода */
+    box-sizing: border-box;
+    /* Учет отступов и границ в общей ширине */
+    font-family: 'Lora', sans-serif;
+    /* Шрифт для полей ввода */
+    border: none;
+    /* Убираем границу */
+    outline: none;
+    /* Убираем контур */
+}
+
+.product-form-container button {
+    background-color: #df4f0d;
+    /* Цвет фона кнопки */
+    font-family: 'Montserrat', sans-serif;
+    /* Шрифт для кнопки */
+    color: #e7e7e7;
+    /* Цвет текста кнопки */
+    border: none;
+    /* Убираем границу кнопки */
+    padding: 10px;
+    /* Отступы внутри кнопки */
+    border-radius: 5px;
+    /* Скругление углов кнопки */
+    font-size: 1em;
+    /* Размер шрифта кнопки */
+    cursor: pointer;
+    /* Указатель при наведении на кнопку */
+    transition: background-color 0.3s;
+    /* Плавный переход цвета кнопки */
+    display: block;
+    /* Блоковая модель для кнопки */
+    margin: 0 auto;
+    /* Центрирование кнопки */
+}
+
+.btn-select-img{
+    display: flex;
+    align-self: flex-end;
+}
+.btn-select-img .file-input{
+    padding: 10px 5px;
+    margin: 0;
+    max-width: 300px;
+    margin-top: 5px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+}
+.btn-select-img .file-input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.custom-file-upload {
+    display: inline-flex; /* Используем flex для выравнивания */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center;
+    white-space: nowrap; 
+    padding: 10px 5px;
+    margin-top: 5px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    background-color: #428dd8; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+.form-label{
+    margin-bottom: 0;
+}
+
+.custom-file-upload:hover {
+    background-color: #357ab7; /* Цвет фона при наведении */
+}
+.file-input::file-selector-button {
+    display: none;
+}
+.product-form-container button:hover {
+    background-color: #e4662b;
+    /* Цвет кнопки при наведении */
+}
+
+@media screen and (max-width: 610px) {
+    .product-form-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .file-selected{
+        flex-direction: column;
+    }
+    .btn-select-img{
+        align-self: flex-start;
+    }
+}

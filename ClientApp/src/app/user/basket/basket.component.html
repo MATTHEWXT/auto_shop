@@ -1,0 +1,42 @@
+<div *ngIf="!isLoading" class="container-basket-info">
+<h2 *ngIf="basketItems.length > 0; else emptyBasket">Корзина</h2>
+<div class="basket-container">
+  <div class="basket-items">
+    <div *ngIf="basketItems.length > 0">
+      <div class="basket-item" *ngFor="let item of basketItems; let i = index">
+        <div class="item-selection">
+          <input type="checkbox" [(ngModel)]="item.selected" />
+        </div>
+        <div class="img-container">
+          <img [src]="baseUrl + item.product.imagePath" alt="item.product.name" />
+        </div>
+        <div class="item-details">
+          <div class="item-product-name">{{ item.product.name }}</div>
+          <div class="item-product-price">{{ item.product.price| number }} ₽</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Правая колонка с функционалом по оформлению заказа -->
+  <div class="basket-checkout">
+    <div *ngIf="selectedItemCount > 0; else emptySelection" class="basket-checkout-container">
+      <h3>Ваш заказ:</h3>
+      <div class="total-price">
+        <p class="total-items">Товары({{selectedItemCount}})</p>
+        <p class="total-amount">{{ selectedTotalPrice | number }} ₽</p>
+      </div>
+    </div>
+    <ng-template #emptySelection>
+      <div class="basket-empty">
+        <p>Выберите товары, чтобы перейти к оформлению заказа.</p>
+      </div>
+    </ng-template>
+
+    <button class="checkout-btn" [disabled]="!anyItemSelected()" (click)=" goToCheckOut()">Перейти к оформлению</button>
+  </div>
+</div>
+<ng-template #emptyBasket>
+  <h2>Корзина пуста</h2>
+</ng-template>
+</div>

@@ -1,0 +1,29 @@
+<div *ngIf="!isLoading" class="product-form-container">
+    <h2>Создать товар</h2>
+    <form #productForm="ngForm" (ngSubmit)="onSubmitProduct()" enctype="multipart/form-data" class="form-container">
+      <div *ngIf="errorMessage" style="color:rgb(255, 38, 0);">
+        {{ errorMessage }}
+    </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Название товара</label>
+        <input type="text" id="name" name="name" [(ngModel)]="product.name" required class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Категория товара</label>
+        <select id="category" name="categoryId" [(ngModel)]="product.categoryId" required class="form-control">
+          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Цена за товар</label>
+        <input type="number" id="price" name="price" [(ngModel)]="product.price" required class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Изображение</label>
+        <div class="btn-select-img">
+          <label for="file-upload" class="custom-file-upload">Выберите файл</label>
+          <input id="file-upload" type="file" (change)="onFileSelected($event)" class="form-control file-input" />
+        </div></div>
+      <button type="submit" class="btn btn-primary">Создать товар</button>
+    </form>
+  </div>

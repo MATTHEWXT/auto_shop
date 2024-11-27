@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.product-form-container {
+    max-width: 900px;
+    padding: 40px 20px 150px 270px;
+    transition: margin-left 0.5s;
+    color: #e7e7e7;
+}
+.search-form,
+.edit-form {
+    background-color: #1c2230; /* Цвет фона формы */
+    border-radius: 4px; /* Скругление углов формы */
+    padding: 20px; /* Отступы внутри формы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.img-thumbnail{
+    padding: 2px;
+    border: none;
+    max-width: 200px;
+    min-height: 200px;
+    border-radius: 2px;
+}
+
+.action-buttons {
+    display: flex;
+    margin-top: 20px; 
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.product-form-container .action-buttons .btn {
+    flex: 1 1 auto;                
+}
+.category-price {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px; 
+}
+
+.category-product,
+.price-product {
+    flex: 1; /* Элементы будут занимать равную ширину */
+}
+
+.product-form-container button {
+    background-color: #df4f0d; /* Цвет фона кнопки */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для кнопки */
+    color: #e7e7e7; /* Цвет текста кнопки */
+    border: none; /* Убираем границу кнопки */
+    padding: 10px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    font-size: 1em; /* Размер шрифта кнопки */
+    cursor: pointer; /* Указатель при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета кнопки */
+    display: block; /* Блоковая модель для кнопки */
+    margin: 0 auto; /* Центрирование кнопки */
+}
+
+.file-input::file-selector-button {
+    display: none;
+}
+
+.btn-select-img{
+    display: flex;
+    align-self: flex-end;
+}
+.btn-select-img .file-input{
+    padding: 10px 5px;
+    margin: 0;
+    max-width: 300px;
+    margin-top: 5px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+}
+.custom-file-upload {
+    display: inline-flex; /* Используем flex для выравнивания */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center;
+    white-space: nowrap; 
+    padding: 10px 5px;
+    margin-top: 5px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    background-color: #428dd8; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.custom-file-upload:hover {
+    background-color: #357ab7; /* Цвет фона при наведении */
+}
+
+.product-form-container .btn-delete{
+    background-color: #cf1515;
+}
+
+.product-form-container .btn-delete:hover {
+    background-color: #d62e2e; /* Цвет при наведении */
+}
+
+
+.product-form-container button:hover {
+    background-color: #e4662b; /* Цвет кнопки при наведении */
+}
+
+
+.mb-3.category-product{
+    max-width: 300px;
+}
+.form-group.mb-4.price-product{
+    max-width: 300px;
+}
+.form-label{
+    margin: 0;
+}
+
+input, 
+select, 
+textarea, 
+button {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus, 
+button:focus {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
+}
+@media screen and (max-width: 610px) {
+    .manager-orders-container {
+        margin-left: 0; /* Убираем отступ слева на узких экранах */
+    }
+    .product-form-container{
+        padding: 20px;
+    }
+    .img-thumbnail{
+        max-width: 150px;
+        min-height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .file-selected{
+        flex-direction: column;
+    }
+    .btn-select-img{
+        align-self: flex-start;
+    }
+}

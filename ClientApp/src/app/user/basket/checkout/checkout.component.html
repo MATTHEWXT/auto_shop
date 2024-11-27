@@ -1,0 +1,59 @@
+<div class="checkout-page">
+  <h2>Оформление заказа</h2>
+
+  <div *ngIf="!isLoading" class="basket-container">
+    <div class="basket-items">
+      <div class="customer-info" *ngIf="!isEditCustomer; else addressForm">
+        <div class="address-info">
+          <p class="address-line">Адрес доставки: <span class="info"> г. {{ city}}, ул. {{ street}}, д. {{ house}}</span></p>
+          <p class="name-line">Получатель:   <span class="info"> {{ firstName }} {{ lastName }}</span></p>
+          <p class="phone-line">Номер телефона:   <span class="info"> {{ phoneNumber }}</span></p>
+        </div>
+        <button class="checkout-btn" (click)="editAddress()">Изменить</button>
+      </div>
+
+      <ng-template #addressForm>
+        <h4>Укажите данные адреса и получателя</h4>
+        <form autocomplete="off" (ngSubmit)="submitCustomer()">
+          <div *ngIf="errorMessage" style="color:rgb(255, 38, 0); font-size: 18px;">
+            {{ errorMessage }}
+        </div>
+        <div class="entry-info">
+          
+          <div class="address-info">
+          <label for="city">Город:</label>
+          <input id="city" [(ngModel)]="city" name="city" >
+
+          <label for="street">Улица:</label>
+          <input id="street" [(ngModel)]="street" name="street" >
+
+          <label for="house">Дом:</label>
+          <input id="house" [(ngModel)]="house" name="house" >
+          </div>
+          <div class="people-info">
+            <label for="name">Имя:</label>
+            <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+  
+            <label for="name">Фамилия:</label>
+            <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" >
+  
+            <label for="number">Номер телефона:</label>
+            <input id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" >
+            </div>
+          </div>
+
+          <button class="checkout-btn" type="submit">Сохранить</button>
+        </form>
+      </ng-template>
+    </div>
+
+    <div class="basket-checkout">
+      <h3>Итоговая стоимость</h3>
+      <div class="total-price">
+        <p class="total-items">Товары ({{ selectedItemCount }})</p>
+        <p class="total-amount">{{ selectedTotalPrice | number }} ₽</p>
+      </div>
+      <button class="checkout-btn"[disabled]="!customerExists" (click)="createOrder()">Создать заказ</button>
+    </div>
+  </div>
+</div>

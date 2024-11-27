@@ -1,0 +1,106 @@
+/* orders-container.component.css */
+
+.orders-container {
+  max-width: 1200px;
+    padding: 32px;
+    margin: 0 auto;
+  }
+  
+  .orders-container h2 {
+    margin-bottom: 20px;
+    color: #e7e7e7;
+  }
+  
+  .order-card {
+    position: relative;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #242c3d;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+    max-width: 800px;
+    color: #e7e7e7;
+  }
+  
+  .order-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-info {
+    margin-bottom: 10px;
+  }
+  
+  .order-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #007bff;
+  }
+
+  
+  .order-info p {
+    margin: 5px 0;
+    color: #e7e7e7;
+  }
+  
+  .order-items {
+    margin: 10px 0;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .product-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 4px;
+    object-fit: cover; /* Сохранение пропорций изображения */
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-details h5 {
+    margin: 0;
+    color: #e7e7e7;
+
+  }
+  .item-details h5::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+    color: #e7e7e7;
+  }
+  
+  .order-total {
+    position: absolute;
+    font-size: 1.2em;
+    bottom: 16px;
+    right: 25px;
+    color: #e7e7e7;
+  }
+  
+  .order-total p {
+    margin: 0;
+  }
+  
+  /* Стили для уведомления об отсутствии заказов */
+  .ng-template {
+    text-align: center;
+    color: #e7e7e7;
+    font-style: italic;
+  }
+
+  @media (max-width: 549px) {
+    .order-card{
+      padding-bottom: 40px;
+    }
+  }
+  

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lora:wght@400;500&family=Montserrat:wght@500;600&display=swap&subset=cyrillic');
+
+.checkout-page {
+  padding: 20px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.basket-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  font-family: 'Lora', sans-serif;
+}
+
+.basket-items {
+  flex: 2;
+  margin: 20px 0;
+  background-color: #242c3d;
+  padding: 20px;
+  border-radius: 4px;
+  color: #e7e7e7;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.basket-checkout h3 {
+  font-size: 22px;
+  color: #e7e7e7;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.checkout-page h2 {
+  color: #e7e7e7;
+}
+
+.basket-items label {
+  color: #e7e7e7;
+  font-size: 14px;
+  font-family: 'Lora', sans-serif;
+}
+
+.customer-info p {
+  color: #e7e7e7;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.basket-items input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 12px;
+  font-size: 1em;
+  border: none;
+  color: #e7e7e7;
+  border-radius: 3px;
+  background-color: #3b4863;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.basket-items input:focus {
+  background-color: #3b4863;
+}
+
+.basket-items input:focus::placeholder {
+  color: #3b4863;
+}
+
+.basket-items input::placeholder {
+  color: #3b4863;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lora', sans-serif;
+  font-size: 16px;
+  color: #e7e7e7;
+}
+
+.total-items,
+.total-amount {
+  font-weight: 500;
+  text-wrap: nowrap;
+  font-size: 18px;
+
+}
+
+.total-amount {
+  margin-left: 25px;
+
+}
+
+.basket-checkout {
+  color: #e7e7e7;
+  align-self: self-start;
+  width: 100%;
+  flex: 1;
+  padding: 30px 20px;
+  background-color: #242c3d;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.address-info {
+  margin-bottom: 10px;
+}
+
+.address-info .info {
+  color: #4ba2ff;
+  text-decoration: underline;
+
+}
+
+.entry-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.entry-info .address-info {
+  min-width: 150px;
+  flex: 1;
+}
+
+.entry-info .people-info {
+  flex: 1;
+  min-width: 150px;
+
+}
+
+.checkout-btn {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #df4f0d;
+  border: none;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.checkout-btn[disabled] {
+  background-color: #2e374d;
+  cursor: not-allowed;
+}
+
+.checkout-btn[disabled]:hover {
+  background-color: #2e374d;
+}
+
+.checkout-btn:hover {
+  background-color: #e46b33;
+}
+
+@media (max-width: 570px) {
+  .basket-container {
+    flex-direction: column;
+  }
+}

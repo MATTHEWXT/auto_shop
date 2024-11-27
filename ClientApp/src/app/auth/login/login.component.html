@@ -1,0 +1,22 @@
+<button class="goHome" routerLink="/">На главную</button>
+
+<div class="login-form">
+    <h2>Авторизация</h2>
+    <div class="enrty-container">
+    <form (ngSubmit)="onSubmit()">
+        <div *ngIf="errorMessage" style="color: rgb(255, 38, 0);">
+            {{ errorMessage }}
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" [(ngModel)]="email" name="email">
+        </div>
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" required>
+        </div>
+        <button type="submit" [class.lock]="isSabmitBtnLock">Войти</button>
+    </form>
+    <p>Создать аккаунт →<button class="reAdress" (click)="goToRegister()">Регистрация</button></p>
+</div>
+</div>

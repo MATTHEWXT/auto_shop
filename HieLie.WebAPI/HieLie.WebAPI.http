@@ -1,0 +1,6 @@
+@HieLie.WebAPI_HostAddress = http://localhost:5186
+
+GET {{HieLie.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
