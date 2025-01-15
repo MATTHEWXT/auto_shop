@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z7U1Zq+B4TM=",
+  "dgSpecHash": "tQCiG79+Rks=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mat\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Mat\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lmBcHCJPpFI=",
+  "dgSpecHash": "9AZgcfy/+dc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Tests\\HieLie.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Tests\\HieLie.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mat\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Mat\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

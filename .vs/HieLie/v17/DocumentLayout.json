@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mat\\Desktop\\hielie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.infrastructure\\services\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|solutionrelative:hielie.infrastructure\\services\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.infrastructure\\repositories\\baserepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|solutionrelative:hielie.infrastructure\\repositories\\baserepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\controllers\\userorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\controllers\\userorderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D99D1A-FB39-4265-9B51-4A6695E3DAC8}|HieLie.WebAPI\\HieLie.WebAPI.csproj|solutionrelative:hielie.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.infrastructure\\repositories\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8598DB42-781F-4033-ABA1-DD13EC0F4CE3}|HieLie.Infrastructure\\HieLie.Infrastructure.csproj|solutionrelative:hielie.infrastructure\\repositories\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.domain\\core\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|solutionrelative:hielie.domain\\core\\specifications\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.domain\\core\\specifications\\ibasespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|solutionrelative:hielie.domain\\core\\specifications\\ibasespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|c:\\users\\mat\\desktop\\hielie\\hielie.domain\\core\\repositories\\ibaserepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CC88549-B6EC-402F-AFD3-AAFC12F62C37}|HieLie.Domain\\HieLie.Domain.csproj|solutionrelative:hielie.domain\\core\\repositories\\ibaserepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Services\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "HieLie.Infrastructure\\Services\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Services\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "HieLie.Infrastructure\\Services\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:00:53.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T18:00:11.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Program.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Program.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:58:09.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBMAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T20:24:22.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserOrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\UserOrdersController.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Controllers\\UserOrdersController.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\UserOrdersController.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Controllers\\UserOrdersController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T20:24:08.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T20:06:13.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpecificationEvaluator.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Repositories\\SpecificationEvaluator.cs",
+              "RelativeDocumentMoniker": "HieLie.Infrastructure\\Repositories\\SpecificationEvaluator.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Repositories\\SpecificationEvaluator.cs",
+              "RelativeToolTip": "HieLie.Infrastructure\\Repositories\\SpecificationEvaluator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:10:11.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBaseSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Specifications\\IBaseSpecification.cs",
+              "RelativeDocumentMoniker": "HieLie.Domain\\Core\\Specifications\\IBaseSpecification.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Specifications\\IBaseSpecification.cs",
+              "RelativeToolTip": "HieLie.Domain\\Core\\Specifications\\IBaseSpecification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:54:14.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseRepositoryAsync.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Repositories\\BaseRepositoryAsync.cs",
+              "RelativeDocumentMoniker": "HieLie.Infrastructure\\Repositories\\BaseRepositoryAsync.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\Repositories\\BaseRepositoryAsync.cs",
+              "RelativeToolTip": "HieLie.Infrastructure\\Repositories\\BaseRepositoryAsync.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:52:34.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "HieLie.WebAPI\\Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "HieLie.WebAPI\\Controllers\\ManagerController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T20:24:13.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBaseRepositoryAsync.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Repositories\\IBaseRepositoryAsync.cs",
+              "RelativeDocumentMoniker": "HieLie.Domain\\Core\\Repositories\\IBaseRepositoryAsync.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Repositories\\IBaseRepositoryAsync.cs",
+              "RelativeToolTip": "HieLie.Domain\\Core\\Repositories\\IBaseRepositoryAsync.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:52:40.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Specifications\\BaseSpecification.cs",
+              "RelativeDocumentMoniker": "HieLie.Domain\\Core\\Specifications\\BaseSpecification.cs",
+              "ToolTip": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\Core\\Specifications\\BaseSpecification.cs",
+              "RelativeToolTip": "HieLie.Domain\\Core\\Specifications\\BaseSpecification.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:47:04.851Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -97,8 +97,6 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddRabbitMq();
-//var redisConnectionString = builder.Configuration.GetSection("Redis:ConnectionString").Value;
-//builder.Services.AddRedisCache(redisConnectionString);
 
 var app = builder.Build();
 

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HieLie.Infrastructure
-build_property.ProjectDir = C:\Users\Mat\source\repos\HieLie\HieLie.Infrastructure\
+build_property.ProjectDir = C:\Users\Mat\Desktop\hielie\HieLie.Infrastructure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

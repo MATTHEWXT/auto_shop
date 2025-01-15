@@ -12,7 +12,6 @@ namespace HieLie.Infrastructure.Services
         {
             var connectionMultiplexer = ConnectionMultiplexer.Connect(connectionString);
             services.AddSingleton<IConnectionMultiplexer>(connectionMultiplexer);
-            services.AddTransient<ICacheService, RedisCacheService>();
 
             return services;
         }

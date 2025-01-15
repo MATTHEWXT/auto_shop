@@ -14,13 +14,11 @@ namespace HieLie.WebAPI.Controllers
     {
         private readonly IWebHostEnvironment _environment;
         private readonly IProductService _productService;
-        private readonly ICacheService _cacheService;
 
-        public ProductController(IWebHostEnvironment environment, IProductService productService, ICacheService cacheService)
+        public ProductController(IWebHostEnvironment environment, IProductService productService)
         {
             _environment = environment;
             _productService = productService;
-            _cacheService = cacheService;
         }
 
         [Authorize(Roles = "admin")]
@@ -44,7 +42,6 @@ namespace HieLie.WebAPI.Controllers
             }
 
             var product = await _productService.CreateAsync(req);
-            await _cacheService.SetProduct(product);
 
             return Ok();
         }
@@ -60,7 +57,6 @@ namespace HieLie.WebAPI.Controllers
                 throw new InvalidOperationException("Категория не имеет товары");
             }
 
-            _ = Task.Run(async () => await _cacheService.SetListProducts(category.Products));
 
             return Ok(category.Products);
         }

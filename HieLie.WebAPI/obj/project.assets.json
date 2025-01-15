@@ -8087,11 +8087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
       "projectName": "HieLie.WebAPI",
-      "projectPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\HieLie.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Mat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8109,14 +8109,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Application\\HieLie.Application.csproj": {
-              "projectPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Application\\HieLie.Application.csproj"
+            "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Application\\HieLie.Application.csproj": {
+              "projectPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Application\\HieLie.Application.csproj"
             },
-            "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Domain\\HieLie.Domain.csproj": {
-              "projectPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Domain\\HieLie.Domain.csproj"
+            "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\HieLie.Domain.csproj": {
+              "projectPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\HieLie.Domain.csproj"
             },
-            "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj"
+            "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj"
             }
           }
         }

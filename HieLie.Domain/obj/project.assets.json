@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Domain\\HieLie.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\HieLie.Domain.csproj",
       "projectName": "HieLie.Domain",
-      "projectPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Domain\\HieLie.Domain.csproj",
+      "projectPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\HieLie.Domain.csproj",
       "packagesPath": "C:\\Users\\Mat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mat\\AppData\\Roaming\\NuGet\\NuGet.Config",

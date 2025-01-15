@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LekuGAxfGhg=",
+  "dgSpecHash": "c5esEUkN0VQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mat\\source\\repos\\HieLie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Mat\\Desktop\\hielie\\HieLie.Infrastructure\\HieLie.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mat\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Mat\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
